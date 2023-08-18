@@ -93,7 +93,8 @@ listItem.addEventListener('click', (event) => {
   if (item) {
     const imdbId = item.dataset.imdbId;
     // Route to movie description page with the imdbId
-    window.location.href = `../pages/movie.html?imdbId=${imdbId}`;
+    const baseURL = window.location.href.split('/').slice(0, -1).join('/');
+    window.location.href = `${baseURL}/pages/movie.html?imdbId=${imdbId}`;
   }
 });
 
