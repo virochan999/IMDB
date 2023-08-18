@@ -40,7 +40,11 @@ searchInput.addEventListener('input', () => {
       listItem.innerHTML = '';
 
       if(data.Response === 'False') {
-        listItem.style.display = 'none';
+        const notFound = document.createElement('div');
+        notFound.classList.add('not-found');
+        listItem.style.padding = '0.2rem';
+        notFound.innerHTML = 'Movie Not Found';
+        listItem.append(notFound);
       } else {
         listItem.style.display = 'block';
       }

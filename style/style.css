@@ -49,6 +49,11 @@
   display: none;
 }
 
+.not-found {
+  text-align: center;
+  color: #f07171;
+}
+
 .item {
   display: flex;
   justify-content: space-between;
