@@ -3,7 +3,7 @@ const listItem = document.querySelector('.list-item');
 // api key
 const apiKey = '29c39e24';
 
-const url = `http://www.omdbapi.com/?apikey=${apiKey}`;
+const url = `https://www.omdbapi.com/?apikey=${apiKey}`;
 
 let abortController = new AbortController();
 

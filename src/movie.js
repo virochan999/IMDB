@@ -7,7 +7,7 @@ function displayMovieDetails() {
   const apiKey = '29c39e24';
 
   const imdbId = new URLSearchParams(window.location.search).get('imdbId');
-  const url = `http://www.omdbapi.com/?apikey=${apiKey}&i=${imdbId}`;
+  const url = `https://www.omdbapi.com/?apikey=${apiKey}&i=${imdbId}`;
 
   // Fetch data from the movies api
   fetch(url)
