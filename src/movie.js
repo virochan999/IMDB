@@ -67,8 +67,8 @@ function displayMovieDetails() {
 // Add movie to Favorites List
 function addToFavorites(movieData) {
   let favourites = JSON.parse(localStorage.getItem('favourites')) || [];
-  console.log("in movie", movieData)
   favourites.push(movieData);
   localStorage.setItem('favourites', JSON.stringify(favourites));
+  alert("Movie added to favourite list")
 }
 

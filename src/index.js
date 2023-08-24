@@ -128,5 +128,6 @@ function addToFavoritesFromIcon(event) {
   heartIcon.setAttribute('data-favorite', 'true');
   heartIcon.classList.add('favorite');
   heartIcon.classList.add('in-favorite');
+  item.classList.add('red-heart');
 
 }
